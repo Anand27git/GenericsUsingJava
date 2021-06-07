@@ -3,7 +3,7 @@ package com.Bridgelabz.genricsjava;
 /***********
  * 
  * @author ANAND
- * purpose:finding Integer Maximum number
+ * purpose:finding Float Maximum number
  *
  *****8*****/
 public class MaxFloat {
