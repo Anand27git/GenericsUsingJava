@@ -6,28 +6,31 @@ import org.junit.Test;
  * 
  * 
  * @author : ANAND 
- * purpose : checking TestCases for Maximum of Integer
+ * purpose : checking TestCases for Maximum of Float
  *
  * 
  ***************************/
 public class Testcases {
-	MaxInteger maxNum = new MaxInteger();
+	MaxFloat maxNum = new MaxFloat();
 
 	@Test
 	public void givenMaxNumAtFirstPosition_ShouldReturnSameNum() {
-		Integer maximumNum = maxNum.testMax(4, 5, 3);
-		Assertions.assertEquals(4, maximumNum);
+		Double maximumNum = MaxInteger.testMax2(4.1, 5.1, 3.1);
+		Assertions.assertEquals(3.1, maximumNum);
+		System.out.println(maximumNum);
 	}
 
 	@Test
 	public void givenMaxNumAtSecondPosition_ShouldReturnSameNum() {
-		Integer maximumNum = maxNum.testMax(4, 5, 3);
-		Assertions.assertEquals(5, maximumNum);
+		Double maximumNum = MaxInteger.testMax2(4.1,5.1,2.1);
+		Assertions.assertEquals(2.1, maximumNum);
+		System.out.println(maximumNum);
 	}
 
 	@Test
 	public void givenMaxNumAtThirdPosition_ShouldReturnSameNum() {
-		Integer maximumNum = maxNum.testMax(4, 5, 3);
-		Assertions.assertEquals(3, maximumNum);
+		Double maximumNum = MaxInteger.testMax2(2.1, 10.2, 3.1);
+		Assertions.assertEquals(3.1, maximumNum);
+		System.out.println(maximumNum);
 	}
 }
