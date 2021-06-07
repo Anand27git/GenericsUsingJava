@@ -6,31 +6,31 @@ import org.junit.Test;
  * 
  * 
  * @author : ANAND 
- * purpose : checking TestCases for Maximum of Float
+ * purpose : checking TestCases for Maximum of String
  *
  * 
  ***************************/
 public class Testcases {
-	MaxFloat maxNum = new MaxFloat();
+	MaxString maximumNum = new MaxString();
 
 	@Test
 	public void givenMaxNumAtFirstPosition_ShouldReturnSameNum() {
-		Double maximumNum = MaxInteger.testMax2(4.1, 5.1, 3.1);
-		Assertions.assertEquals(3.1, maximumNum);
-		System.out.println(maximumNum);
+		String maximumstr = (String)MaxString.testMax2("anand", "chethan", "balaji");
+		Assertions.assertEquals("anand", maximumstr);
+		System.out.println(maximumstr);
 	}
 
 	@Test
 	public void givenMaxNumAtSecondPosition_ShouldReturnSameNum() {
-		Double maximumNum = MaxInteger.testMax2(4.1,5.1,2.1);
-		Assertions.assertEquals(2.1, maximumNum);
-		System.out.println(maximumNum);
+		String maximumstr = (String)MaxString.testMax2("Apple","peach","banana");
+		Assertions.assertEquals("peach", maximumstr);
+		System.out.println(maximumstr);
 	}
 
 	@Test
 	public void givenMaxNumAtThirdPosition_ShouldReturnSameNum() {
-		Double maximumNum = MaxInteger.testMax2(2.1, 10.2, 3.1);
-		Assertions.assertEquals(3.1, maximumNum);
+		String maximumNum = MaxString.testMax2("duke","royal","apachi");
+		Assertions.assertEquals("duke", maximumNum);
 		System.out.println(maximumNum);
 	}
 }
